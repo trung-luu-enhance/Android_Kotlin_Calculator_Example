@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/inputEditText"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:maxLines="5"
+        app:layout_constraintVertical_weight="5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/resultTextView"/>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:text="@string/default_result"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintTop_toBottomOf="@id/inputEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/line1"/>
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintTop_toBottomOf="@id/resultTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/line2">
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/button_7"/>
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/button_8"/>
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/button_9"/>
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/button_back"/>
+
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/button_clear"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line2"
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintTop_toBottomOf="@id/line1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/line3">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/button_4"/>
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/button_5"/>
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/button_6"/>
+
+        <Button
+            android:id="@+id/buttonMul"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/button_mul"/>
+
+        <Button
+            android:id="@+id/buttonDiv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/button_div"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line3"
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintTop_toBottomOf="@id/line2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/line4">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/button_1"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/button_2"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/button_3"/>
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/button_add"/>
+
+        <Button
+            android:id="@+id/buttonSub"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/button_sub"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line4"
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintTop_toBottomOf="@id/line3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/button_0"/>
+
+        <Button
+            android:id="@+id/buttonDot"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/button_dot"/>
+
+        <Button
+            android:id="@+id/buttonPara"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/button_para"/>
+
+        <Button
+            android:id="@+id/buttonMod"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/button_mod"/>
+
+        <Button
+            android:id="@+id/buttonEqual"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/button_equal"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
